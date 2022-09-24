@@ -8,10 +8,9 @@ from math import prod
 
 def coordinati():
     result = [0, 0]
-    print(prod(result))
     while not prod(result):
-        result[0] = int(input('Введите координату х: '))
-        result[1] = int(input('Введите координату y: '))
+        result[0] = int(input('Введите координату х (0 вводить нельзя): '))
+        result[1] = int(input('Введите координату y (0 вводите нельзя): '))
     return result
 
 def findQuarter(array):
